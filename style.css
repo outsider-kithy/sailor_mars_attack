@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#wrap{
+    position: relative;
+    max-width: 940px;
+    margin: 0 auto;
+}
+#webacamCanvas{
+    position: absolute;
+    transform: rotateY(180deg);
+}
+video{
+    width: 100%;
+    display: none;
+}
+#webgl{
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+#uv{
+    display: none;
+}

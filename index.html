@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Three.js + TensorFlow.js</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet"></script>
+        <script src="https://unpkg.com/three@0.142.0/build/three.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="wrap">
+            <!--各器官のキーポイントを描画-->
+            <canvas id="webacamCanvas" width="960" height="640"></canvas>
+            <!--デバイスからの映像を取得（非表示にしておく）-->
+            <video id="video" autoplay playsinline width="960" height="640">Video stream not
+            available.</video>
+            <!--Three.jsのシーンを描画-->
+            <div id="webgl" width="960" height="640"></div>
+            <!--文字のテクスチャを書き出すcanvas-->
+            <canvas id="uv"></canvas>
+        </div>
+    </body>
+</html>
